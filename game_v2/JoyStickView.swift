@@ -8,75 +8,82 @@
 import SwiftUI
 
 struct JoystickView: View {
-    @ObservedObject var joystickState: JoystickState
-
+    // Internal joystick state properties
+    @State private var angle: Double = 0
+    @State private var isActive: Bool = false
+    @State private var distance: Double = 0
+    
+    // Default positions and dimensions within the view (assuming a 150x150 frame)
     private let defaultLocation = CGPoint(x: 75, y: 75)
     @State private var outerCircleLocation: CGPoint = CGPoint(x: 75, y: 75)
     @State private var innerCircleLocation: CGPoint = CGPoint(x: 75, y: 75)
     private let bigCircleRadius: CGFloat = 50
-
+    
+    // Gesture for controlling the joystick
     var fingerDrag: some Gesture {
         DragGesture(minimumDistance: 0)
             .onChanged { value in
-                joystickState.isActive = true
-                let distance = sqrt(pow(value.location.x - outerCircleLocation.x, 2) +
-                                    pow(value.location.y - outerCircleLocation.y, 2))
+                isActive = true
+                let computedDistance = sqrt(pow(value.location.x - outerCircleLocation.x, 2) +
+                                            pow(value.location.y - outerCircleLocation.y, 2))
                 
-                if outerCircleLocation == defaultLocation && innerCircleLocation == defaultLocation && distance > bigCircleRadius {
+                if outerCircleLocation == defaultLocation && innerCircleLocation == defaultLocation && computedDistance > bigCircleRadius {
                     outerCircleLocation = value.location
                     innerCircleLocation = value.location
                     return
                 }
                 
-                let angle = atan2(value.location.y - outerCircleLocation.y,
-                                  value.location.x - outerCircleLocation.x)
-                let newX = outerCircleLocation.x + max(0, (distance - bigCircleRadius)) * cos(angle)
-                let newY = outerCircleLocation.y + max(0, (distance - bigCircleRadius)) * sin(angle)
+                let computedAngle = atan2(value.location.y - outerCircleLocation.y,
+                                          value.location.x - outerCircleLocation.x)
+                let newX = outerCircleLocation.x + max(0, (computedDistance - bigCircleRadius)) * cos(computedAngle)
+                let newY = outerCircleLocation.y + max(0, (computedDistance - bigCircleRadius)) * sin(computedAngle)
                 
                 outerCircleLocation = CGPoint(x: newX, y: newY)
                 innerCircleLocation = value.location
-                joystickState.angle = angle
-                joystickState.distance = distance
+                angle = computedAngle
+                distance = computedDistance
             }
             .onEnded { _ in
                 outerCircleLocation = defaultLocation
                 innerCircleLocation = defaultLocation
-                joystickState.angle = 0
-                joystickState.isActive = false
-                joystickState.distance = 0
+                angle = 0
+                isActive = false
+                distance = 0
             }
     }
     
+    // Display the computed angle as text (in degrees)
     var angleText: String {
-        let angle = atan2(innerCircleLocation.y - outerCircleLocation.y,
-                          innerCircleLocation.x - outerCircleLocation.x)
-        var degrees = Int(-angle * 180 / .pi)
+        let computedAngle = atan2(innerCircleLocation.y - outerCircleLocation.y,
+                                  innerCircleLocation.x - outerCircleLocation.x)
+        var degrees = Int(-computedAngle * 180 / .pi)
         if degrees < 0 { degrees += 360 }
         return "\(degrees)°"
     }
     
     var body: some View {
         ZStack {
+            // Full-area transparent background to capture gestures.
             Color.clear
-                .frame(maxWidth: .infinity, maxHeight: .infinity)
+                .frame(width: 1, height: 1)
                 .contentShape(Rectangle())
                 .simultaneousGesture(fingerDrag)
             
-            // Outer joystick circle
+            // Outer circle representing the joystick base.
             Circle()
                 .foregroundColor(.gray).opacity(0.5)
                 .frame(width: bigCircleRadius * 2, height: bigCircleRadius * 2)
                 .position(outerCircleLocation)
                 .gesture(fingerDrag)
             
-            // Inner joystick circle
+            // Inner circle representing the joystick knob.
             Circle()
                 .foregroundColor(Color(white: 0.4745)).opacity(0.5)
                 .frame(width: bigCircleRadius / 1.25, height: bigCircleRadius / 1.25)
                 .position(innerCircleLocation)
                 .gesture(fingerDrag)
             
-            // Angle text overlay
+            // Angle text overlay.
             Text(angleText)
                 .font(.caption)
                 .foregroundColor(.white)
@@ -86,5 +93,6 @@ struct JoystickView: View {
                 .cornerRadius(5)
                 .position(x: 75, y: 20)
         }
+        .frame(width: 150, height: 150)
     }
 }
