@@ -27,19 +27,19 @@ class JoystickNode: SKNode {
     // A background area to make sure touches are detected
     private let touchArea: SKShapeNode
     
-    override init() {
+    init(rectSize: CGSize, color: UIColor) {
         // Outer circle (base of the joystick)
         outerCircle = SKShapeNode(circleOfRadius: bigCircleRadius)
-        outerCircle.fillColor = .gray
+        outerCircle.fillColor = color
         outerCircle.alpha = 0.5
         
         // Inner circle (joystick knob)
         innerCircle = SKShapeNode(circleOfRadius: smallCircleRadius)
-        innerCircle.fillColor = .darkGray
+        innerCircle.fillColor = color
         innerCircle.alpha = 0.7
         
         // Touch detection area (invisible)
-        touchArea = SKShapeNode(circleOfRadius: bigCircleRadius * 2)
+        touchArea = SKShapeNode(rectOf: rectSize)
         touchArea.fillColor = .clear
         touchArea.strokeColor = .clear
         
