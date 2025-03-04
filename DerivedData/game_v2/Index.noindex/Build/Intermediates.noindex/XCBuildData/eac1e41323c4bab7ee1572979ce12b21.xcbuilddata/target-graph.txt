@@ -1,0 +1,13 @@
+Target dependency graph (8 targets)
+Target 'game_v2UITests' in project 'game_v2' (no dependencies)
+Target 'game_v2UITests' in project 'game_v2'
+➜ Explicit dependency on target 'game_v2' in project 'game_v2'
+Target 'game_v2UITests' in project 'game_v2'
+➜ Explicit dependency on target 'game_v2' in project 'game_v2'
+Target 'game_v2Tests' in project 'game_v2' (no dependencies)
+Target 'game_v2Tests' in project 'game_v2'
+➜ Explicit dependency on target 'game_v2' in project 'game_v2'
+Target 'game_v2Tests' in project 'game_v2'
+➜ Explicit dependency on target 'game_v2' in project 'game_v2'
+Target 'game_v2' in project 'game_v2' (no dependencies)
+Target 'game_v2' in project 'game_v2' (no dependencies)

@@ -1,0 +1,1 @@
+@rpath/game_v2.debug.dylib

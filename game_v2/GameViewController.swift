@@ -23,7 +23,7 @@ class GameViewController: UIViewController {
         // Add joystick nodes directly to the scene.
         // (Assumes that you have defined an 'addJoysticks()' method in GameScene,
         // which instantiates and positions two JoystickNode instances.)
-        scene.addJoysticks()
+//        scene.addJoysticks()
         
         // Present the scene.
         skView.presentScene(scene)

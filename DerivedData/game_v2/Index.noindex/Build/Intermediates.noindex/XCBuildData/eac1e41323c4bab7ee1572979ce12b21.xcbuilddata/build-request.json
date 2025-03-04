@@ -1,0 +1,54 @@
+{
+  "buildCommand" : {
+    "command" : "prepareForIndexing",
+    "enableIndexBuildArena" : true,
+    "targets" : null
+  },
+  "configuredTargets" : [
+    {
+      "guid" : "f4616bf597f93a72e119bf32a5b5de8977681ca7b317e639c202e48e9e8ddca1"
+    },
+    {
+      "guid" : "f4616bf597f93a72e119bf32a5b5de895f3c88ff7fac21e9c65a5b74d1661ae6"
+    },
+    {
+      "guid" : "f4616bf597f93a72e119bf32a5b5de8969082d750b7dc0ce691042d064de0b5d"
+    }
+  ],
+  "containerPath" : "/Users/jj/Desktop/game_v2/game_v2.xcodeproj",
+  "continueBuildingAfterErrors" : true,
+  "dependencyScope" : "workspace",
+  "enableIndexBuildArena" : false,
+  "hideShellScriptEnvironment" : false,
+  "parameters" : {
+    "action" : "indexbuild",
+    "arenaInfo" : {
+      "buildIntermediatesPath" : "/Users/jj/Desktop/game_v2/DerivedData/game_v2/Index.noindex/Build/Intermediates.noindex",
+      "buildProductsPath" : "/Users/jj/Desktop/game_v2/DerivedData/game_v2/Index.noindex/Build/Products",
+      "derivedDataPath" : "/Users/jj/Desktop/game_v2/DerivedData",
+      "indexDataStoreFolderPath" : "/Users/jj/Desktop/game_v2/DerivedData/game_v2/Index.noindex/DataStore",
+      "indexEnableDataStore" : true,
+      "indexPCHPath" : "/Users/jj/Desktop/game_v2/DerivedData/game_v2/Index.noindex/PrecompiledHeaders",
+      "indexRegularBuildIntermediatesPath" : "/Users/jj/Desktop/game_v2/DerivedData/game_v2/Build/Intermediates.noindex",
+      "indexRegularBuildProductsPath" : "/Users/jj/Desktop/game_v2/DerivedData/game_v2/Build/Products",
+      "pchPath" : "/Users/jj/Desktop/game_v2/DerivedData/game_v2/Index.noindex/Build/Intermediates.noindex/PrecompiledHeaders"
+    },
+    "configurationName" : "Debug",
+    "overrides" : {
+      "synthesized" : {
+        "table" : {
+          "ENABLE_PREVIEWS" : "NO",
+          "ENABLE_XOJIT_PREVIEWS" : "NO",
+          "ONLY_ACTIVE_ARCH" : "YES"
+        }
+      }
+    }
+  },
+  "qos" : "utility",
+  "schemeCommand" : "launch",
+  "showNonLoggedProgress" : true,
+  "useDryRun" : false,
+  "useImplicitDependencies" : true,
+  "useLegacyBuildLocations" : false,
+  "useParallelTargets" : true
+}

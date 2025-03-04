@@ -21,19 +21,18 @@ class GameScene: SKScene {
     
     /// Adds two joystick nodes to the scene.
     func addJoysticks() {
-        let joystickPadding: CGFloat = 20
 
         // Position the left joystick in the bottom left.
-        leftJoystick.position = CGPoint(x: 75 + joystickPadding,
-                                        y: 75 + joystickPadding)
+        leftJoystick.position = CGPoint(x: 125,
+                                        y: 100)
         // Only add if it's not already in the scene.
         if leftJoystick.parent == nil {
             addChild(leftJoystick)
         }
         
         // Position the right joystick in the bottom right.
-        rightJoystick.position = CGPoint(x: size.width - 75 - joystickPadding,
-                                         y: 75 + joystickPadding)
+        rightJoystick.position = CGPoint(x: size.width - 125,
+                                         y: 100)
         if rightJoystick.parent == nil {
             addChild(rightJoystick)
         }

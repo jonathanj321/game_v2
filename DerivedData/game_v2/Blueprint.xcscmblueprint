@@ -1,0 +1,23 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "065768397742384AB377B202283FBD1E05D1698D",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "065768397742384AB377B202283FBD1E05D1698D" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "07F8DDF6-827B-4CBD-8925-0F27B7528A79",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "065768397742384AB377B202283FBD1E05D1698D" : "game_v2\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "game_v2",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "game_v2.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/jonathanj321\/game_v2.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "065768397742384AB377B202283FBD1E05D1698D"
+    }
+  ]
+}

@@ -18,8 +18,8 @@ class JoystickNode: SKNode {
     // MARK: - Constants
     
     private let bigCircleRadius: CGFloat = 50
-    private let smallCircleRadius: CGFloat = 30
-    private let defaultLocation = CGPoint(x: 75, y: 75)
+    private let smallCircleRadius: CGFloat = 20
+    private let defaultLocation = CGPoint(x: 0, y: 0)
     
     private let outerCircle: SKShapeNode
     private let innerCircle: SKShapeNode
@@ -39,7 +39,7 @@ class JoystickNode: SKNode {
         innerCircle.alpha = 0.7
         
         // Touch detection area (invisible)
-        touchArea = SKShapeNode(circleOfRadius: bigCircleRadius * 2)
+        touchArea = SKShapeNode(circleOfRadius: bigCircleRadius * 5)
         touchArea.fillColor = .clear
         touchArea.strokeColor = .clear
         
@@ -82,9 +82,9 @@ class JoystickNode: SKNode {
         resetJoystick()
     }
     
-    override func touchesCancelled(_ touches: Set<UITouch>, with event: UIEvent?) {
-        resetJoystick()
-    }
+//    override func touchesCancelled(_ touches: Set<UITouch>, with event: UIEvent?) {
+//        resetJoystick()
+//    }
         
     private func updateJoystick(to location: CGPoint) {
         isActive = true

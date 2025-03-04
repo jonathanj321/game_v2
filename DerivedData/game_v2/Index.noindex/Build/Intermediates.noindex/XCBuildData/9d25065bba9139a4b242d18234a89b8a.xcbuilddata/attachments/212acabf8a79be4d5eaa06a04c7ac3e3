@@ -1,0 +1,12 @@
+{
+  "" : {
+    "dependencies" : "/Users/jj/Desktop/game_v2/DerivedData/game_v2/Index.noindex/Build/Intermediates.noindex/game_v2.build/Debug-iphoneos/game_v2Tests.build/Objects-normal/arm64/game_v2Tests-master.d",
+    "diagnostics" : "/Users/jj/Desktop/game_v2/DerivedData/game_v2/Index.noindex/Build/Intermediates.noindex/game_v2.build/Debug-iphoneos/game_v2Tests.build/Objects-normal/arm64/game_v2Tests-master.dia",
+    "emit-module-dependencies" : "/Users/jj/Desktop/game_v2/DerivedData/game_v2/Index.noindex/Build/Intermediates.noindex/game_v2.build/Debug-iphoneos/game_v2Tests.build/Objects-normal/arm64/game_v2Tests-master-emit-module.d",
+    "emit-module-diagnostics" : "/Users/jj/Desktop/game_v2/DerivedData/game_v2/Index.noindex/Build/Intermediates.noindex/game_v2.build/Debug-iphoneos/game_v2Tests.build/Objects-normal/arm64/game_v2Tests-master-emit-module.dia",
+    "swift-dependencies" : "/Users/jj/Desktop/game_v2/DerivedData/game_v2/Index.noindex/Build/Intermediates.noindex/game_v2.build/Debug-iphoneos/game_v2Tests.build/Objects-normal/arm64/game_v2Tests-master.swiftdeps"
+  },
+  "/Users/jj/Desktop/game_v2/game_v2Tests/game_v2Tests.swift" : {
+
+  }
+}

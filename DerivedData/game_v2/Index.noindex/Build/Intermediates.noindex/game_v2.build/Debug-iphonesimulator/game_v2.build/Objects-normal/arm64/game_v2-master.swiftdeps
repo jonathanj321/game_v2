@@ -1,0 +1,10 @@
+version: "Apple Swift version 6.0 (swiftlang-6.0.0.9.10 clang-1600.0.26.2)"
+options: "c3347a1324f847cde427c7719ae31ea8f02e8d49747d8231d59be7e630ace502"
+build_start_time: [1740990385, 205710000]
+build_end_time: [1740990385, 438375000]
+inputs:
+  ? "/Users/jj/Desktop/game_v2/DerivedData/game_v2/Index.noindex/Build/Intermediates.noindex/game_v2.build/Debug-iphonesimulator/game_v2.build/DerivedSources/GeneratedAssetSymbols.swift"
+  : [1740990381, 935508767]
+  "/Users/jj/Desktop/game_v2/game_v2/AppDelegate.swift": [1740990376, 315484189]
+  "/Users/jj/Desktop/game_v2/game_v2/GameScene.swift": [1740990376, 338873095]
+  "/Users/jj/Desktop/game_v2/game_v2/GameViewController.swift": [1740990376, 340130258]

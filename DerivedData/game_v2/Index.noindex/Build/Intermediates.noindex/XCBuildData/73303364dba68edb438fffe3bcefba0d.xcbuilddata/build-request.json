@@ -1,0 +1,60 @@
+{
+  "buildCommand" : {
+    "command" : "prepareForIndexing",
+    "enableIndexBuildArena" : true,
+    "targets" : null
+  },
+  "configuredTargets" : [
+    {
+      "guid" : "f4616bf597f93a72e119bf32a5b5de8977681ca7b317e639c202e48e9e8ddca1"
+    }
+  ],
+  "containerPath" : "/Users/jj/Desktop/game_v2/game_v2.xcodeproj",
+  "continueBuildingAfterErrors" : true,
+  "dependencyScope" : "workspace",
+  "enableIndexBuildArena" : false,
+  "hideShellScriptEnvironment" : false,
+  "parameters" : {
+    "action" : "indexbuild",
+    "activeArchitecture" : "arm64",
+    "activeRunDestination" : {
+      "disableOnlyActiveArch" : false,
+      "platform" : "iphonesimulator",
+      "sdk" : "iphonesimulator18.0",
+      "sdkVariant" : "iphonesimulator",
+      "supportedArchitectures" : [
+        "arm64",
+        "x86_64"
+      ],
+      "targetArchitecture" : "arm64"
+    },
+    "arenaInfo" : {
+      "buildIntermediatesPath" : "/Users/jj/Desktop/game_v2/DerivedData/game_v2/Index.noindex/Build/Intermediates.noindex",
+      "buildProductsPath" : "/Users/jj/Desktop/game_v2/DerivedData/game_v2/Index.noindex/Build/Products",
+      "derivedDataPath" : "/Users/jj/Desktop/game_v2/DerivedData",
+      "indexDataStoreFolderPath" : "/Users/jj/Desktop/game_v2/DerivedData/game_v2/Index.noindex/DataStore",
+      "indexEnableDataStore" : true,
+      "indexPCHPath" : "/Users/jj/Desktop/game_v2/DerivedData/game_v2/Index.noindex/PrecompiledHeaders",
+      "indexRegularBuildIntermediatesPath" : "/Users/jj/Desktop/game_v2/DerivedData/game_v2/Build/Intermediates.noindex",
+      "indexRegularBuildProductsPath" : "/Users/jj/Desktop/game_v2/DerivedData/game_v2/Build/Products",
+      "pchPath" : "/Users/jj/Desktop/game_v2/DerivedData/game_v2/Index.noindex/Build/Intermediates.noindex/PrecompiledHeaders"
+    },
+    "configurationName" : "Debug",
+    "overrides" : {
+      "synthesized" : {
+        "table" : {
+          "ENABLE_PREVIEWS" : "NO",
+          "ENABLE_XOJIT_PREVIEWS" : "NO",
+          "ONLY_ACTIVE_ARCH" : "YES"
+        }
+      }
+    }
+  },
+  "qos" : "default",
+  "schemeCommand" : "launch",
+  "showNonLoggedProgress" : true,
+  "useDryRun" : false,
+  "useImplicitDependencies" : true,
+  "useLegacyBuildLocations" : false,
+  "useParallelTargets" : true
+}
