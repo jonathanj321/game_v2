@@ -552,6 +552,48 @@
 			<key>uniqueIdentifier</key>
 			<string>609B55FB-D1BF-4D30-8D95-A364E24385FE</string>
 		</dict>
+		<key>610EE1E4-C8EC-4FD4-A703-C1C7A92459CD</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>610EE1E4-C8EC-4FD4-A703-C1C7A92459CD.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+				<key>totalNumberOfAnalyzerIssues</key>
+				<integer>0</integer>
+				<key>totalNumberOfErrors</key>
+				<integer>0</integer>
+				<key>totalNumberOfTestFailures</key>
+				<integer>0</integer>
+				<key>totalNumberOfWarnings</key>
+				<integer>0</integer>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>game_v2 project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>game_v2</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build game_v2</string>
+			<key>timeStartedRecording</key>
+			<real>762768353.35931802</real>
+			<key>timeStoppedRecording</key>
+			<real>762768353.43807995</real>
+			<key>title</key>
+			<string>Build game_v2</string>
+			<key>uniqueIdentifier</key>
+			<string>610EE1E4-C8EC-4FD4-A703-C1C7A92459CD</string>
+		</dict>
 		<key>6DB0C7E4-866C-4961-A098-2BD38A908F82</key>
 		<dict>
 			<key>className</key>
