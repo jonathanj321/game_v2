@@ -372,6 +372,67 @@
 			<key>uniqueIdentifier</key>
 			<string>27E9FC12-EBE7-4FCF-AFB6-22BE47C883BF</string>
 		</dict>
+		<key>2F6290D9-1402-434D-A79F-404DA21385A5</key>
+		<dict>
+			<key>auxiliaryLogUniqueIdentifier</key>
+			<string>01CA0BE6-33EC-45A0-A2D1-D7040B38A667</string>
+			<key>auxiliaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+				<key>totalNumberOfAnalyzerIssues</key>
+				<integer>0</integer>
+				<key>totalNumberOfErrors</key>
+				<integer>0</integer>
+				<key>totalNumberOfTestFailures</key>
+				<integer>0</integer>
+				<key>totalNumberOfWarnings</key>
+				<integer>0</integer>
+			</dict>
+			<key>className</key>
+			<string>IDESchemeActionsInvocationRecord</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>com.apple.dt.IDE.LaunchSchemeAction</string>
+			<key>fileName</key>
+			<string>Run-game_v2-2025.03.03_23-57-50--0800.xcresult</string>
+			<key>hasAuxiliaryLog</key>
+			<true/>
+			<key>hasConsoleLog</key>
+			<true/>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+				<key>totalNumberOfAnalyzerIssues</key>
+				<integer>0</integer>
+				<key>totalNumberOfErrors</key>
+				<integer>0</integer>
+				<key>totalNumberOfTestFailures</key>
+				<integer>0</integer>
+				<key>totalNumberOfWarnings</key>
+				<integer>0</integer>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>game_v2 project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>game_v2</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Run game_v2</string>
+			<key>timeStartedRecording</key>
+			<real>762767870.46812201</real>
+			<key>timeStoppedRecording</key>
+			<real>0.0</real>
+			<key>title</key>
+			<string>Run game_v2</string>
+			<key>uniqueIdentifier</key>
+			<string>2F6290D9-1402-434D-A79F-404DA21385A5</string>
+		</dict>
 		<key>3D735AEA-78D5-4F80-B3DC-FB15C14B6579</key>
 		<dict>
 			<key>auxiliaryLogUniqueIdentifier</key>
@@ -432,6 +493,67 @@
 			<string>Run game_v2</string>
 			<key>uniqueIdentifier</key>
 			<string>3D735AEA-78D5-4F80-B3DC-FB15C14B6579</string>
+		</dict>
+		<key>3E2934EC-9DEF-41F0-93FE-AD3DAF8ED981</key>
+		<dict>
+			<key>auxiliaryLogUniqueIdentifier</key>
+			<string>20762F70-0CD1-4797-955A-AF1456C4189E</string>
+			<key>auxiliaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+				<key>totalNumberOfAnalyzerIssues</key>
+				<integer>0</integer>
+				<key>totalNumberOfErrors</key>
+				<integer>0</integer>
+				<key>totalNumberOfTestFailures</key>
+				<integer>0</integer>
+				<key>totalNumberOfWarnings</key>
+				<integer>0</integer>
+			</dict>
+			<key>className</key>
+			<string>IDESchemeActionsInvocationRecord</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>com.apple.dt.IDE.LaunchSchemeAction</string>
+			<key>fileName</key>
+			<string>Run-game_v2-2025.03.04_00-04-00--0800.xcresult</string>
+			<key>hasAuxiliaryLog</key>
+			<true/>
+			<key>hasConsoleLog</key>
+			<true/>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+				<key>totalNumberOfAnalyzerIssues</key>
+				<integer>0</integer>
+				<key>totalNumberOfErrors</key>
+				<integer>0</integer>
+				<key>totalNumberOfTestFailures</key>
+				<integer>0</integer>
+				<key>totalNumberOfWarnings</key>
+				<integer>0</integer>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>game_v2 project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>game_v2</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Run game_v2</string>
+			<key>timeStartedRecording</key>
+			<real>762768240.89105797</real>
+			<key>timeStoppedRecording</key>
+			<real>0.0</real>
+			<key>title</key>
+			<string>Run game_v2</string>
+			<key>uniqueIdentifier</key>
+			<string>3E2934EC-9DEF-41F0-93FE-AD3DAF8ED981</string>
 		</dict>
 		<key>43BD0C6A-6432-4BD7-AE42-F4F017AFAC0B</key>
 		<dict>
@@ -1409,6 +1531,67 @@
 			<key>uniqueIdentifier</key>
 			<string>98484135-2712-4696-8F28-F285FEC3E858</string>
 		</dict>
+		<key>9F11F6DD-8286-45DF-B9D5-86ECE128CCFF</key>
+		<dict>
+			<key>auxiliaryLogUniqueIdentifier</key>
+			<string>3857DDAC-E841-4321-84CA-C03CC6454EBA</string>
+			<key>auxiliaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+				<key>totalNumberOfAnalyzerIssues</key>
+				<integer>0</integer>
+				<key>totalNumberOfErrors</key>
+				<integer>0</integer>
+				<key>totalNumberOfTestFailures</key>
+				<integer>0</integer>
+				<key>totalNumberOfWarnings</key>
+				<integer>0</integer>
+			</dict>
+			<key>className</key>
+			<string>IDESchemeActionsInvocationRecord</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>com.apple.dt.IDE.LaunchSchemeAction</string>
+			<key>fileName</key>
+			<string>Run-game_v2-2025.03.04_00-03-09--0800.xcresult</string>
+			<key>hasAuxiliaryLog</key>
+			<true/>
+			<key>hasConsoleLog</key>
+			<true/>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+				<key>totalNumberOfAnalyzerIssues</key>
+				<integer>0</integer>
+				<key>totalNumberOfErrors</key>
+				<integer>0</integer>
+				<key>totalNumberOfTestFailures</key>
+				<integer>0</integer>
+				<key>totalNumberOfWarnings</key>
+				<integer>0</integer>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>game_v2 project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>game_v2</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Run game_v2</string>
+			<key>timeStartedRecording</key>
+			<real>762768189.49890304</real>
+			<key>timeStoppedRecording</key>
+			<real>0.0</real>
+			<key>title</key>
+			<string>Run game_v2</string>
+			<key>uniqueIdentifier</key>
+			<string>9F11F6DD-8286-45DF-B9D5-86ECE128CCFF</string>
+		</dict>
 		<key>A619028D-0326-4881-8DE5-EFDF26295B4A</key>
 		<dict>
 			<key>auxiliaryLogUniqueIdentifier</key>
@@ -1835,6 +2018,67 @@
 			<string>Run game_v2</string>
 			<key>uniqueIdentifier</key>
 			<string>D27B2F49-8DE4-42DC-B792-3F0C8B6A2828</string>
+		</dict>
+		<key>DB24AAB3-74F0-44DD-A8DF-888931AF2AF2</key>
+		<dict>
+			<key>auxiliaryLogUniqueIdentifier</key>
+			<string>21AAB63C-F7CA-4C8A-B0F1-238B450E94A4</string>
+			<key>auxiliaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>E</string>
+				<key>totalNumberOfAnalyzerIssues</key>
+				<integer>0</integer>
+				<key>totalNumberOfErrors</key>
+				<integer>2</integer>
+				<key>totalNumberOfTestFailures</key>
+				<integer>0</integer>
+				<key>totalNumberOfWarnings</key>
+				<integer>0</integer>
+			</dict>
+			<key>className</key>
+			<string>IDESchemeActionsInvocationRecord</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>com.apple.dt.IDE.LaunchSchemeAction</string>
+			<key>fileName</key>
+			<string>Run-game_v2-2025.03.03_23-57-13--0800.xcresult</string>
+			<key>hasAuxiliaryLog</key>
+			<true/>
+			<key>hasConsoleLog</key>
+			<true/>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>E</string>
+				<key>totalNumberOfAnalyzerIssues</key>
+				<integer>0</integer>
+				<key>totalNumberOfErrors</key>
+				<integer>2</integer>
+				<key>totalNumberOfTestFailures</key>
+				<integer>0</integer>
+				<key>totalNumberOfWarnings</key>
+				<integer>0</integer>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>game_v2 project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>game_v2</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Run game_v2</string>
+			<key>timeStartedRecording</key>
+			<real>762767833.26115203</real>
+			<key>timeStoppedRecording</key>
+			<real>0.0</real>
+			<key>title</key>
+			<string>Run game_v2</string>
+			<key>uniqueIdentifier</key>
+			<string>DB24AAB3-74F0-44DD-A8DF-888931AF2AF2</string>
 		</dict>
 		<key>E9AFC67D-B1D4-40E9-9579-40E5789CF966</key>
 		<dict>

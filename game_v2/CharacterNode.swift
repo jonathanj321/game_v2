@@ -9,7 +9,7 @@ import SpriteKit
 
 class CharacterNode: SKSpriteNode {
     
-    var speedMultiplier: CGFloat = 0.5 // Movement speed
+    var speedMultiplier: CGFloat = 0.1 // Movement speed
 
     func move(with joystick: JoystickNode) {
         guard joystick.isActive else { return }

@@ -317,8 +317,17 @@ SWIFT_CLASS("_TtC7game_v211AppDelegate")
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
-@class SKView;
+@class SKTexture;
+@class UIColor;
 @class NSCoder;
+
+SWIFT_CLASS("_TtC7game_v213CharacterNode")
+@interface CharacterNode : SKSpriteNode
+- (nonnull instancetype)initWithTexture:(SKTexture * _Nullable)texture color:(UIColor * _Nonnull)color size:(CGSize)size OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+@class SKView;
 
 SWIFT_CLASS("_TtC7game_v29GameScene")
 @interface GameScene : SKScene
@@ -352,6 +361,14 @@ SWIFT_CLASS("_TtC7game_v212JoystickNode")
 - (void)touchesCancelled:(NSSet<UITouch *> * _Nonnull)touches withEvent:(UIEvent * _Nullable)event;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+
+SWIFT_CLASS("_TtC7game_v214ProjectileNode")
+@interface ProjectileNode : SKSpriteNode
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithTexture:(SKTexture * _Nullable)texture color:(UIColor * _Nonnull)color size:(CGSize)size SWIFT_UNAVAILABLE;
 @end
 
 
