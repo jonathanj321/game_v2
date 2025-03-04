@@ -14,6 +14,7 @@ class GameViewController: UIViewController {
         
         // Set up the SpriteKit view.
         let skView = SKView(frame: view.bounds)
+        skView.isMultipleTouchEnabled = true
         view.addSubview(skView)
         
         // Create the game scene.

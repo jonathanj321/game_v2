@@ -39,7 +39,7 @@ class JoystickNode: SKNode {
         innerCircle.alpha = 0.7
         
         // Touch detection area (invisible)
-        touchArea = SKShapeNode(circleOfRadius: bigCircleRadius * 5)
+        touchArea = SKShapeNode(circleOfRadius: bigCircleRadius * 2)
         touchArea.fillColor = .clear
         touchArea.strokeColor = .clear
         
@@ -63,25 +63,46 @@ class JoystickNode: SKNode {
     
     // MARK: - Touch Handling
 
+    // Add this property in your JoystickNode class
+    private var activeTouch: UITouch?
+
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
-        isActive = true
-        if let touch = touches.first {
-            let location = touch.location(in: self)
-            updateJoystick(to: location)
+        // Only register a new touch if one is not already active
+        if activeTouch == nil {
+            for touch in touches {
+                let location = touch.location(in: self)
+                // Optionally, check if the location is within your touch area:
+                if touchArea.contains(location) {
+                    activeTouch = touch
+                    isActive = true
+                    updateJoystick(to: location)
+                    break
+                }
+            }
         }
     }
-    
+
     override func touchesMoved(_ touches: Set<UITouch>, with event: UIEvent?) {
-        if let touch = touches.first {
-            let location = touch.location(in: self)
+        if let activeTouch = activeTouch, touches.contains(activeTouch) {
+            let location = activeTouch.location(in: self)
             updateJoystick(to: location)
         }
     }
-    
+
     override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
-        resetJoystick()
+        if let activeTouch = activeTouch, touches.contains(activeTouch) {
+            resetJoystick()
+            self.activeTouch = nil
+        }
     }
-    
+
+    override func touchesCancelled(_ touches: Set<UITouch>, with event: UIEvent?) {
+        if let activeTouch = activeTouch, touches.contains(activeTouch) {
+            resetJoystick()
+            self.activeTouch = nil
+        }
+    }
+
 //    override func touchesCancelled(_ touches: Set<UITouch>, with event: UIEvent?) {
 //        resetJoystick()
 //    }
