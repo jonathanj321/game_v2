@@ -7,39 +7,33 @@
 
 import SpriteKit
 
+import SpriteKit
+
 class GameScene: SKScene {
-    // Create two joystick nodes
+    
     let leftJoystick = JoystickNode()
     let rightJoystick = JoystickNode()
-    
+    let character = CharacterNode(texture: SKTexture(imageNamed: "character"))  // Load a texture
+
     override func didMove(to view: SKView) {
         backgroundColor = .black
+
+        character.position = CGPoint(x: size.width / 2, y: size.height / 2)
+        addChild(character)
         
-        // Call the method to add the joysticks to the scene.
         addJoysticks()
     }
     
-    /// Adds two joystick nodes to the scene.
     func addJoysticks() {
+        leftJoystick.position = CGPoint(x: 125, y: 100)
+        rightJoystick.position = CGPoint(x: size.width - 125, y: 100)
 
-        // Position the left joystick in the bottom left.
-        leftJoystick.position = CGPoint(x: 125,
-                                        y: 100)
-        // Only add if it's not already in the scene.
-        if leftJoystick.parent == nil {
-            addChild(leftJoystick)
-        }
-        
-        // Position the right joystick in the bottom right.
-        rightJoystick.position = CGPoint(x: size.width - 125,
-                                         y: 100)
-        if rightJoystick.parent == nil {
-            addChild(rightJoystick)
-        }
+        addChild(leftJoystick)
+        addChild(rightJoystick)
     }
 
     override func update(_ currentTime: TimeInterval) {
-        // Use joystick values (like leftJoystick.angle, leftJoystick.distance, etc.)
-        // to control your game objects or camera.
+        character.move(with: leftJoystick)
+        character.shoot(from: rightJoystick, in: self)
     }
 }
